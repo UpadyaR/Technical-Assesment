@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">School</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ID</td>
+                                <td>Name</td>
+                            </tr>
+                            {% for item in data %}
+                            <tr>
+                                <td>{{ item.id }}</td>
+                                <td>{{ item.school_name }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Class</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ID</td>
+                                <td>Class</td>
+                            </tr>
+                            {% for item in data %}
+                            <tr>
+                                <td>{{ item.id }}</td>
+                                <td>{{ item.Class }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Assessment_Areas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ID</td>
+                                <td>Name</td>
+                            </tr>
+                            {% for item in data %}
+                            <tr>
+                                <td>{{ item.id }}</td>
+                                <td>{{ item.AssessmentAreas }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Student</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ID</td>
+                                <td>Fullname</td>
+                            </tr>
+                            {% for item in data %}
+                            <tr>
+                                <td>{{ item.id }}</td>
+                                <td>{{ item.First_Name }} {{ item.Last_Name}}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Answers</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ID</td>
+                                <td>Answers</td>
+                            </tr>
+                            {% for item in data %}
+                            <tr>
+                                <td>{{ item.id }}</td>
+                                <td>{{ item.Answers }}td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </body>
+</html>
